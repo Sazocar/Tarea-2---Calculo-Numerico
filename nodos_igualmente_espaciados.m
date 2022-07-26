@@ -7,7 +7,7 @@ function nodos = nodos_igualmente_espaciados(n)
   h = (b-a)/n;
   
   for j = 0:n
-    xj = x_inicial + j*h
+    xj = x_inicial + j*h;
     
     vector = horzcat(vector, xj);
   endfor
