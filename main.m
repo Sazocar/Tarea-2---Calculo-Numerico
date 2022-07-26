@@ -8,4 +8,8 @@ I = [-5:1:5]        # Intervalo desde [-5,5]
 
 evaluacion = funcion(2);
 
-datos_x();
+y = datos_y()
+
+nodos = nodos_igualmente_espaciados(5)
+
+nodos(2)

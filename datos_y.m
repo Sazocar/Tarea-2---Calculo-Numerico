@@ -1,9 +1,9 @@
-function datos_x()
+function datos = datos_y()
   y = [];     
   
   for i = -5:5  
     y = horzcat(y,funcion(i));     # Agrego el valor en el array
   endfor
     
-    y   # Muestro en pantalla el array
+    datos = y;
   endfunction
