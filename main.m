@@ -8,8 +8,13 @@ I = [-5:1:5]        # Intervalo desde [-5,5]
 
 evaluacion = funcion(2);
 
-y = datos_y()
+cinco_datos_y = datos_y(5)
 
-nodos = nodos_igualmente_espaciados(5)
+cinco_nodos = nodos_igualmente_espaciados(5)     #6 nodos
+diez_nodos  = nodos_igualmente_espaciados(10)    #11 nodos
+veinte_nodos = nodos_igualmente_espaciados(20)   #21 nodos
 
-nodos(2)
+
+p = polyfit(cinco_nodos,cinco_datos_y,5)
+
+#plot(p)
