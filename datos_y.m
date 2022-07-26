@@ -4,7 +4,7 @@ function datos = datos_y(n)
   
   for i = 1:n+1
     value = nodos(i);
-    y = horzcat(y,funcion(value));     # Agrego el valor en el array
+    y = horzcat(y,main_function(value));     # Agrego el valor en el array
   endfor
     
     datos = y;
