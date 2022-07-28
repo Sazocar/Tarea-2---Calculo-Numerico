@@ -5,15 +5,21 @@ y1 = datos_y1(x1);  # Valores pequenos evaluados en f(x)
 
 q = false;
 while (q != true)
+  printf("  Programa Elaborado por: \n")
+  printf("  Simon Azocar\n")
+  printf("  Angel Hernandez\n")
+  printf("  Carlos Ortega\n")
   printf("\n")
   printf("\n")
   printf("\n")
-  printf("Indique la operacion que quiere realizar :\n")
-  printf("     1 -> Tema segunda pregunta pregunta\n")
-  printf("     2 -> Tema tercera pregunta \n")
+  printf("  Indique la operacion que quiere realizar :\n")
+  printf("\n")
+  printf("     1 -> Construccion del Interpolador Polinomial\n")
+  printf("     2 -> Minimos Cuadrados Discreto\n")
   printf("     3 -> Link VIDIO LUCES \n")
   printf("     4 -> Salir\n")
-  pregunta = input("      Opción -> ");
+  printf("\n")
+  pregunta = input("      Opcion -> ");
   switch (pregunta)
   case 1
       clc()
@@ -23,12 +29,12 @@ while (q != true)
         printf("\n")
         printf("\n")
         printf("\n")
-        printf("Indique la operacion que quiere realizar :\n")
+        printf("  Indique la operacion que quiere realizar :\n")
         printf("     1 -> n = 5\n")
         printf("     2 -> n = 10\n")
         printf("     3 -> n = 20\n")
         printf("     4 -> Volver\n")
-        pregunta1 = input("       Opción -> ");
+        pregunta1 = input("       Opcion -> ");
         switch (pregunta1)
         case 1
             clc()
@@ -50,7 +56,6 @@ while (q != true)
 
             showMaxError(max_error)      # Mostramos el maximo error en pantalla
             mostrarGrafica(x1, p1, y1, error, -4, -0.5, "n=5","northeast")
-            hold on;
 
             e = false;
             while(e != true)
@@ -58,7 +63,7 @@ while (q != true)
               printf("\n")
               printf("\n")
               printf("     1 -> Volver\n")
-              pregunta1 = input("         Opción -> ");
+              pregunta1 = input("         Opcion -> ");
               switch (pregunta1)
                 case 1
                   clc()
@@ -85,7 +90,6 @@ while (q != true)
 
             showMaxError(max_error)      # Mostramos el maximo error en pantalla
             mostrarGrafica(x1, p1, y1, error, -1, -2, "n=10","north")
-            hold on;
 
             e = false;
             while(e != true)
@@ -93,7 +97,7 @@ while (q != true)
               printf("\n")
               printf("\n")
               printf("     1 -> Volver\n")
-              pregunta1 = input("         Opción -> ");
+              pregunta1 = input("         Opcion -> ");
               switch (pregunta1)
                 case 1
                   clc()
@@ -120,7 +124,6 @@ while (q != true)
 
             showMaxError(max_error)      # Mostramos el maximo error en pantalla
             mostrarGrafica(x1, p1, y1, error, -1, -1000, "n=20","north")   # Graficamos p1, y1 y error
-            hold on;
 
             e = false;
             while(e != true)
@@ -128,7 +131,7 @@ while (q != true)
               printf("\n")
               printf("\n")
               printf("     1 -> Volver\n")
-              pregunta1 = input("         Opción -> ");
+              pregunta1 = input("         Opcion -> ");
               switch (pregunta1)
                 case 1
                   clc()
@@ -149,12 +152,14 @@ while (q != true)
         printf("\n")
         printf("\n")
         printf("\n")
-        printf("Indique la operacion que quiere realizar :\n")
-        printf("     1 -> Usando una recta\n")
-        printf("     2 -> Usando una parábola\n")
+        printf("  Con que desea realizar el ajuste de Minimos Cuadrados? :\n")
+        printf("\n")
+        printf("     1 -> Una recta\n")
+        printf("     2 -> Una parabola\n")
         printf("     3 -> Un polinomio de la forma P(x) = ax^3 + bx^2 + cx  + d\n")
         printf("     4 -> Volver\n")
-        option = input("         Opción -> ");
+        printf("\n")
+        option = input("         Opcion -> ");
         switch (option)
         case 1
             clc()
@@ -177,7 +182,7 @@ while (q != true)
 
             showMaxError(max_error)      # Mostramos el maximo error en pantalla
             mostrarGrafica(x1, p1, y1, error, -5, 4, "n=20","northeast")   # Graficamos p1, y1 y error
-            hold on;
+         
 
             e = false;
             while(e != true)
@@ -185,7 +190,7 @@ while (q != true)
               printf("\n")
               printf("\n")
               printf("     1 -> Volver\n")
-              option = input("         Opción -> ");
+              option = input("         Opcion -> ");
               switch (option)
                 case 1
                   clc()
@@ -213,7 +218,6 @@ while (q != true)
 
             showMaxError(max_error)      # Mostramos el maximo error en pantalla
             mostrarGrafica(x1, p1, y1, error, -5, 4, "n=20","northeast")   # Graficamos p1, y1 y error
-            hold on;
 
             e = false;
             while(e != true)
@@ -221,7 +225,7 @@ while (q != true)
               printf("\n")
               printf("\n")
               printf("     1 -> Volver\n")
-              opcion = input("         Opción -> ");
+              opcion = input("         Opcion -> ");
               switch (opcion)
                 case 1
                   clc()
@@ -250,7 +254,6 @@ while (q != true)
 
             showMaxError(max_error)      # Mostramos el maximo error en pantalla
             mostrarGrafica(x1, p1, y1, error, -5, 4, "n=20","northeast")   # Graficamos p1, y1 y error
-            hold on;
 
             e = false;
             while(e != true)
@@ -258,7 +261,7 @@ while (q != true)
               printf("\n")
               printf("\n")
               printf("     1 -> Volver\n")
-              option = input("         Opción -> ");
+              option = input("         Opcion -> ");
               switch (option)
                 case 1
                   clc()
@@ -277,14 +280,14 @@ while (q != true)
     printf("\n")
     printf("\n")
     printf("\n")
-    printf("https://youtu.be/EZm2SiurlZc\n")
+    printf("Haga click aca ---> https://youtu.be/EZm2SiurlZc\n")
     e = false;
     while(e != true)
       printf("\n")
       printf("\n")
       printf("\n")
       printf("     1 -> Volver\n")
-      opcion = input("         Opción -> ");
+      opcion = input("         Opcion -> ");
       switch (opcion)
         case 1
           clc()
