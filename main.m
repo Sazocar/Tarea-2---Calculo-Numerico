@@ -64,26 +64,26 @@ y1 = datos_y1(x1);  # Valores pequenos evaluados en f(x)
 
 # --- Codigo para la parte 3 --- 
 
-#option = 1    # ANGELITO, aqui el usuario ingresa 1, 2 o 3
+option = 1    # ANGELITO, aqui el usuario ingresa 1, 2 o 3
 
                 # Si es 1, es la recta
                 # Si es 2, es la parabola
                 # Si es 3, es el polinomio cubico
 
-#n = 20
-#veinte_datos_x = nodos_igualmente_espaciados(n)   #21 nodos
-#veinte_datos_y = datos_y(n)
+n = 20
+veinte_datos_x = nodos_igualmente_espaciados(n)   #21 nodos
+veinte_datos_y = datos_y(n)
 
 
-#p = polyfit(veinte_datos_x,veinte_datos_y,option);
+p = polyfit(veinte_datos_x,veinte_datos_y,option);    # <--- Aqui va la option del user
 
-#p1 = polyval(p, x1);
-#error = abs(y1-p1);
-#max_error = max(error);
+p1 = polyval(p, x1);
+error = abs(y1-p1);
+max_error = max(error);
 
-#showMaxError(max_error)      # Mostramos el maximo error en pantalla
-#mostrarGrafica(x1, p1, y1, error, -5, 4, "n=20","northeast")   # Graficamos p1, y1 y error
-#hold on; 
+showMaxError(max_error)      # Mostramos el maximo error en pantalla
+mostrarGrafica(x1, p1, y1, error, -5, 4, "n=20","northeast")   # Graficamos p1, y1 y error
+hold on; 
 
 
 
