@@ -5,24 +5,24 @@ y1 = datos_y1(x1);  # Valores pequenos evaluados en f(x)
 
 # ---  Codigo para n = 5  ---
 
-n = 5   #<-- !!! Usa este valor introducido por el usuario para que sea mas facil
+#n = 5   #<-- !!! Usa este valor introducido por el usuario para que sea mas facil
             # Recuerda pedirle nada mas 5, 10 o 20
             
             
-cinco_datos_x = nodos_igualmente_espaciados(n)     # 6 nodos (n+1)
+#cinco_datos_x = nodos_igualmente_espaciados(n)     # 6 nodos (n+1)
 
-cinco_datos_y = datos_y(n)   # n+1 datos
+#cinco_datos_y = datos_y(n)   # n+1 datos
 
-p = polyfit(cinco_datos_x,cinco_datos_y,n);
+#p = polyfit(cinco_datos_x,cinco_datos_y,n);
 
-p1 = polyval(p, x1);
-error = abs(y1-p1);
-max_error = max(error);
+#p1 = polyval(p, x1);
+#error = abs(y1-p1);
+#max_error = max(error);
 
 
-showMaxError(max_error)      # Mostramos el maximo error en pantalla
-graficarCincoNodos(x1, p1, y1, error)   # Graficamos p1, y1 y error
-hold on;
+#showMaxError(max_error)      # Mostramos el maximo error en pantalla
+#mostrarGrafica(x1, p1, y1, error, -4, -0.5, "n=5","northeast")
+#hold on;
 
 
 # ---  Codigo para n = 10 ---
@@ -39,7 +39,7 @@ hold on;
 #max_error = max(error);
 
 #showMaxError(max_error)      # Mostramos el maximo error en pantalla
-#graficarDiezNodos(x1, p1, y1, error)   # Graficamos p1, y1 y error
+#mostrarGrafica(x1, p1, y1, error, -1, -2, "n=10","north")
 #hold on;
 
 
@@ -53,17 +53,16 @@ hold on;
 
 
 #p = polyfit(veinte_datos_x,veinte_datos_y,n);
-
 #p1 = polyval(p, x1);
 #error = abs(y1-p1);
 #max_error = max(error);
 
 #showMaxError(max_error)      # Mostramos el maximo error en pantalla
-#graficarVeinteNodos(x1, p1, y1, error)   # Graficamos p1, y1 y error
+#mostrarGrafica(x1, p1, y1, error, -1, -1000, "n=20","north")   # Graficamos p1, y1 y error
 #hold on;
 
 
-# --- Codigo para la parte 3 ---  (De momento da error)
+# --- Codigo para la parte 3 --- 
 
 #option = 1    # ANGELITO, aqui el usuario ingresa 1, 2 o 3
 
@@ -71,13 +70,20 @@ hold on;
                 # Si es 2, es la parabola
                 # Si es 3, es el polinomio cubico
 
-#n = 20;
-#x = nodos_igualmente_espaciados(n);   #21 nodos
-#y = datos_y(n);
+#n = 20
+#veinte_datos_x = nodos_igualmente_espaciados(n)   #21 nodos
+#veinte_datos_y = datos_y(n)
 
 
-#p = polyfit(x,y,1)    # La recta
-#plot(x,p) 
+#p = polyfit(veinte_datos_x,veinte_datos_y,option);
+
+#p1 = polyval(p, x1);
+#error = abs(y1-p1);
+#max_error = max(error);
+
+#showMaxError(max_error)      # Mostramos el maximo error en pantalla
+#mostrarGrafica(x1, p1, y1, error, -5, 4, "n=20","northeast")   # Graficamos p1, y1 y error
+#hold on; 
 
 
 
